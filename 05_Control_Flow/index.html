@@ -15,15 +15,14 @@
 
 <body>
     <div id="app">
-        <!-- <p v-html="wizard + ' ' + (
-            wizard == harry ? hedwig   :
-            wizard == ron   ? scabbers :
-            wizard == hermione ? crookshanks : '')"></p> -->
-
-        <p
-            v-for="wizard in wizards()"
-            v-html="wizard.name + ' ' + wizard.pet"
-        ></p>
+        <div id="app">
+            <!-- <p v-html="wizard + ' ' + (
+                wizard == harry ? hedwig   :
+                wizard == ron   ? scabbers :
+                wizard == hermione ? crookshanks : '')"></p> -->
+    
+            <p v-for="wizard in wizards()" v-html="wizard.name + ' ' + wizard.pet"></p>
+        </div>
     </div>
 
     <script>
